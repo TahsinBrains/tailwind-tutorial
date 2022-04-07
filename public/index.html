@@ -1,0 +1,215 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="text-gray-600 font-body">
+
+    <div class="grid md:grid-cols-3">
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100">
+                        <a href="/" class="hover:text-gray-700 tracking-widest">Food Ninja</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6 h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li class="text-gray-700 font-bold py-1">
+                        <a href="#" class="block px-4 flex justify-end border-r-4 border-primary">
+                            <span>Home</span>
+                            <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="block px-4 flex justify-end border-r-4 border-white">
+                            <span>About</span>
+                            <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="block px-4 flex justify-end border-r-4 border-white">
+                            <span>Contact</span>
+                            <svg class="w-5 ml-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="px-16 py-6 md:col-span-2 bg-gray-100">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</a>
+                <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</a>
+            </div>
+
+            <header class="mt-4">
+                <h2 class="text-gray-700 text-6xl font-semibold leading-none tracking-wider">Recipes</h2>
+                <h3 class="text-2xl font-semibold tracking-wider">For Ninjas</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Latest Recipes</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!-- cards go here -->
+                    <!-- sports -->
+                    <div class="max-w-sm w-80 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow mx-auto my-8 relative">
+                        <img class="w-full h-36 object-fill" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-2 py-4 absolute bottom-1/2">
+                            <div class="inline-block bg-secondary-100 rounded-full px-3 py-1 text-sm text-white font-semibold mr-2">
+                                <svg class="inline-block w-5 align-bottom" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+                                    <circle cx="17" cy="4" r="2"/>
+                                    <path d="M15.777 10.969a2.007 2.007 0 0 0 2.148.83l3.316-.829-.483-1.94-3.316.829-1.379-2.067a2.01 2.01 0 0 0-1.272-.854l-3.846-.77a1.998 1.998 0 0 0-2.181 1.067l-1.658 3.316 1.789.895 1.658-3.317 1.967.394L7.434 17H3v2h4.434c.698 0 1.355-.372 1.715-.971l1.918-3.196 5.169 1.034 1.816 5.449 1.896-.633-1.815-5.448a2.007 2.007 0 0 0-1.506-1.33l-3.039-.607 1.772-2.954.417.625z"/>
+                                </svg>
+                                <span>Sports</span>
+                            </div>
+                            <span class="inline-block bg-secondary-100 rounded-full px-3 py-1 text-sm text-white font-semibold mr-2">#travel</span>
+                        </div>
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-2xl mb-2">Pocha Seminar</div>
+                            <div class="flex mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                  </svg>
+                                <span>BrainStation-23, Mohakhali</span>
+                            </div>
+                            <div class="flex mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                  </svg>
+                                <span>04.03.2022</span>
+                            </div>
+                            <div class="flex mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                  </svg>
+                                <span>18.30 - 20.30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- webinar -->
+                    <div class="max-w-sm w-80 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow mx-auto my-8 relative">
+                        <img class="w-full h-36 object-fill" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                        <div class="px-2 py-4 absolute bottom-1/2">
+                            <div class="inline-block bg-secondary-100 rounded-full px-3 py-1 text-sm text-white font-semibold mr-2">
+                                <svg class="inline-block w-5 align-bottom" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 9L21 7V17L16 15M4 18.5H15C15.5523 18.5 16 18.0523 16 17.5V6.5C16 5.94772 15.5523 5.5 15 5.5H4C3.44772 5.5 3 5.94772 3 6.5V17.5C3 18.0523 3.44772 18.5 4 18.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Webinar</span>
+                            </div>
+                            <span class="inline-block bg-secondary-100 rounded-full px-3 py-1 text-sm text-white font-semibold mr-2">#travel</span>
+                        </div>
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-2xl mb-2">Pocha Seminar</div>
+                            <div class="flex mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                  </svg>
+                                <span>BrainStation-23, Mohakhali</span>
+                            </div>
+                            <div class="flex mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                                  </svg>
+                                <span>04.03.2022</span>
+                            </div>
+                            <div class="flex mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 inline-block" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                                  </svg>
+                                <span>18.30 - 20.30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <img src="img/stew.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Bean Chili Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <img src="img/noodles.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Veg Noodles</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <img src="img/curry.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Tofu Curry</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Most Popular</h4>
+
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                    <!-- cards go here -->
+                    <div class="card hover:shadow-lg">
+                        <img src="img/stew.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold truncate block">5 Bean Chili Stew with Feta Cheese</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <img src="img/noodles.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Veg Noodles</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <img src="img/curry.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">Tofu Curry</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 flex justify-center">
+                <div class="btn bg-secondary-100 text-secondary-200 inline-block hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">Load more</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

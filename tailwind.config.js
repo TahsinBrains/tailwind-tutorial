@@ -6,11 +6,14 @@ module.exports = {
                 primary: '#FF6363',
                 secondary: {
                     100: '#00A5B2',
-                    200: '#888883',
+                    200: '#80D2D8',
                 }
             },
             fontFamily: {
                 body: ['Nunito']
+            },
+            height: {
+                '81': '21rem'
             }
         },
     },

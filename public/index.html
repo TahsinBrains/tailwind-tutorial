@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="text-gray-600 font-body">
-
+<body class="text-black font-body">
     <div class="grid md:grid-cols-3">
         <div class="md:col-span-1 md:flex md:justify-end">
             <nav class="text-right">
@@ -57,12 +56,12 @@
             <div>
                 <h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Latest Recipes</h4>
 
-                <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                <div class="mt-8 grid lg:grid-cols-3 gap-3">
                     <!-- cards go here -->
                     <!-- sports -->
-                    <div class="max-w-sm w-80 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow mx-auto my-8 relative">
+                    <div class="max-w-sm w-80 h-81 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-500 mx-auto relative">
                         <img class="w-full h-36 object-fill" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-                        <div class="px-2 py-4 absolute bottom-1/2">
+                        <div class="px-2 py-4 absolute top-24">
                             <div class="inline-block bg-secondary-100 rounded-full px-3 py-1 text-sm text-white font-semibold mr-2">
                                 <svg class="inline-block w-5 align-bottom" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
                                     <circle cx="17" cy="4" r="2"/>
@@ -92,12 +91,16 @@
                                   </svg>
                                 <span>18.30 - 20.30</span>
                             </div>
+                            <div class="absolute bottom-5">
+                                <span class="text-xs">More from <span class="text-secondary-100">BrainStation-23</span></span>
+
+                            </div>
                         </div>
                     </div>
                     <!-- webinar -->
-                    <div class="max-w-sm w-80 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow mx-auto my-8 relative">
+                    <div class="max-w-sm w-80 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow mx-auto relative">
                         <img class="w-full h-36 object-fill" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-                        <div class="px-2 py-4 absolute bottom-1/2">
+                        <div class="px-2 py-4 absolute top-24">
                             <div class="inline-block bg-secondary-100 rounded-full px-3 py-1 text-sm text-white font-semibold mr-2">
                                 <svg class="inline-block w-5 align-bottom" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M16 9L21 7V17L16 15M4 18.5H15C15.5523 18.5 16 18.0523 16 17.5V6.5C16 5.94772 15.5523 5.5 15 5.5H4C3.44772 5.5 3 5.94772 3 6.5V17.5C3 18.0523 3.44772 18.5 4 18.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -126,39 +129,6 @@
                                   </svg>
                                 <span>18.30 - 20.30</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card hover:shadow-lg">
-                        <img src="img/stew.jpg" alt="stew" class="h-32 sm:h-48 w-full object-cover">
-                        <div class="m-4">
-                            <span class="font-bold">5 Bean Chili Stew</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                        </div>
-                        <div class="badge">
-                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>25 mins</span>
-                        </div>
-                    </div>
-                    <div class="card hover:shadow-lg">
-                        <img src="img/noodles.jpg" alt="noodles" class="h-32 sm:h-48 w-full object-cover">
-                        <div class="m-4">
-                            <span class="font-bold">Veg Noodles</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                        </div>
-                        <div class="badge">
-                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>25 mins</span>
-                        </div>
-                    </div>
-                    <div class="card hover:shadow-lg">
-                        <img src="img/curry.jpg" alt="curry" class="h-32 sm:h-48 w-full object-cover">
-                        <div class="m-4">
-                            <span class="font-bold">Tofu Curry</span>
-                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
-                        </div>
-                        <div class="badge">
-                            <svg class="inline-block w-5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span>25 mins</span>
                         </div>
                     </div>
                 </div>
